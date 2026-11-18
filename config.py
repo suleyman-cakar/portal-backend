@@ -1,3 +1,5 @@
+import os
+
 APP_NAME = "EsCyberSec Portal"
 PORT = 8080
-PORTAL_SECRET = "g1t_g3cm1s1"
+PORTAL_SECRET = os.getenv("PORTAL_SECRET", "")
